@@ -5,6 +5,7 @@ Instructions:
 Download Python 3.8.5, if you don't know how, look it up.
 Install Python 3.8.5
 Open the Windows Command Prompt
+Type 'pip install playsound'
 cd to the location of RamenOS.py
 Type "RamenOS.py"
 You have now run RamenOS.
