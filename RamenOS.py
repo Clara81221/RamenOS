@@ -15,7 +15,7 @@ print("Unfortunately, during the beta, you only may view the code used. RamenOS 
 userInput='o'
 
 def users():
-    userInput == input(r"C:\Users\> ")
+    userInput = input(r"C:\Users\> ")
     if userInput == "dir":
         print(r"--Directory of C:\Users--")
         print("Desktop      [Folder]")
@@ -43,7 +43,7 @@ def users():
     if userInput == "cd ..":
         start()
 def start():
-    userInput == input("C:\> ")
+    userInput = input("C:\> ")
     if userInput == "dir":
         print("--Directory of C:\--")
         print("Program Files          [System Folder]")
