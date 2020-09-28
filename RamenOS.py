@@ -1,26 +1,126 @@
+import playsound
 import time
 import getpass
-# import only system from os 
-from os import system, name
-print('Welcome to                                                    ')
-print(' ______  ______  __    __  ______  __   __  ______  ______    ')
-print('/\  == \/\  __ \/\ "-./  \/\  ___\/\ "-.\ \/\  __ \/\  ___\   ')
-print('\ \  __<\ \  __ \ \ \-./\ \ \  __\\ \ \-.  \ \ \/\ \ \___  \  ')
-print(' \ \_\ \_\ \_\ \_\ \_\ \ \_\ \_____\ \_\\"\_\ \_____\/\_____\ ')
-print('  \/_/ /_/\/_/\/_/\/_/  \/_/\/_____/\/_/ \/_/\/_____/\/_____/ ')
-print('                                                              ')                    
-print('                 [Version 0.4.5.2020.9.27]                    ')
-print('       (c) 2020 Takeout Studios. All rights reserved.         ')
-print('                      Python Edition                          ')
-print('Beta Protocol ACTIVE')
-print("Unfortunately, during the beta, you only may view the code used. RamenOS will not run in it's current form. Type 'leave' to exit")
+import os
+import sys
+print("Loading...")
+time.sleep(5)
+playsound('sys.mp3')
+words = """
+Startup Process
+├──System check
+   ├──CPU...     OK
+   ├──GPU...     OK
+   ├──Memory...  OK
+   ├──Floppy...  OK
+   └──Network... OK
+├──System check complete!
+└──System specs check
+   ├──300 MB Hard Disk Drive
+   ├──2683 KB memory loaded
+   ├──Intel (R) Pentium 319.7 Mhz/s
+   └──3.5 in Floppy
+└──Starting driver library
+   ├──Intel (R) Graphics Control Panel
+   ├──Intel (R) VGA Graphics
+   ├──Crucial 3MB Memory
+   ├──Takeout Corp. 3.5 in Floppy
+   ├──Samsung 300 MB Hard Disk Drive
+   └──Takeout Ethernet Network Card
+└──Checking for updates...
+   └──No update required.
+├──Starting RamenOS Interface
+├──Beginning Server-Client connection "SUPERHOT Official Discord"
+├──Beginning Server-Client connection "Server 383"
+├──Beginning Server-Client connection "Server 5"
+├──Beginning Server-Client connection "Server 4"
+├──Beginning Server-Client connection "Server 3"
+├──Beginning Server-Client connection "Server 2"
+├──Beginning Server-Client connection "Server 1"
+├──Beginning AI Server connection "orientalramen408.github.io/BETAAIPROGRAM"
+├──Startup process success
+└──Login process
+"""
+for char in words:
+    time.sleep(0.05)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+userRamenUsername = "null"
+userRamenPassword = "null"
+def loginUsername():
+    userRamenUsername = input("USERNAME: ")
+    #You can change the user settings to your liking
+    if userRamenUsername == "Ramen":
+        userRamenPassword()
+    else:
+        words = "Incorrect Username"
+        for char in words:
+            time.sleep(0.1)
+            sys.stdout.write(char)
+            sys.stdout.flush()
+        userRamenUsername()
+def loginPassword():
+    userRamenPassword = getpass.getpass("PASSWORD: ")
+    if userRamenPassword == "9378":
+        print("Welcome, Ramen")
+        time.sleep(2)
+        start()
+    else:
+        words = "Incorrect Password"
+        for char in words:
+            time.sleep(0.1)
+            sys.stdout.write(char)
+            sys.stdout.flush()
+        userRamenPassword()        
+print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""")
+time.sleep(.1)
 userInput='o'
-# define our clear function 
-def clear(): 
-  
-    #Clearer 
-    if name == 'nt': 
-        _ = system('cls')
 def users():
     userInput = input(r"C:\Users\> ")
     if userInput == "dir":
@@ -50,6 +150,356 @@ def users():
     if userInput == "cd ..":
         start()
 def start():
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print("[O----]")
+    print("Loading...")
+    time.sleep(1)
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print("[OO---]")
+    print("Loading...")
+    time.sleep(1)
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print("[OOO--]")
+    print("Loading...")
+    time.sleep(1)
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print("[OOOO-]")
+    print("Loading...")
+    time.sleep(1)
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print("[OOOOO]")
+    print("Loading complete!")
+    print("""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    """)
+    print('Welcome to                                                    ')
+    time.sleep(.5)
+    print('oooooooooo                                                   ooooooo    oooooooo8 ')
+    playsound('RamenOSJingle1.mp3')
+    time.sleep(.5)
+    print(' 888    888  ooooooo   oo ooo oooo   ooooooooo8 oo oooooo  o888   888o 888        ')
+    playsound('RamenOSJingle2.mp3')
+    time.sleep(.5)
+    print(' 888oooo88   oo   888   888 888 888 888      88  888   888 888     888 888        ')
+    playsound('RamenOSJingle3.mp3')
+    time.sleep(.5)
+    print(' 888  oo88   ooooo888   888 888 888 888oooooo8   888   888 888     888  888oooooo  ')
+    playsound('RamenOSJingle4.mp3')
+    time.sleep(.5)
+    print(' 888  88o  888    888   888 888 888 888          888   888 888o   o888         888 ')
+    playsound('RamenOSJingle5.mp3')
+    time.sleep(.5)
+    print('o888o  88o8 88ooo88 8o o888o888o888o  88oooo888 o888o o888o  88ooo88   o88oooo888')
+    playsound('RamenOSJingle6.mp3')
+    time.sleep(.1)
+    print('-----------------------------------------------------------------------------------')                    
+    time.sleep(.1) 
+    print('                                   [Version E̸͞͏R̛͘͢R͟Ơ͜͟Ŗ̷̨]                          ')
+    playsound('ERR.mp3')
+    time.sleep(.1) 
+    print('                     (c) 2020 Takeout Studios. All rights reserved.         ')
+    time.sleep(.1)
+    print('                                    Python Edition                          ')
+    time.sleep(1)
+    #Yooo, that's dope! it actually works! I don't care if it's sloppy, FU
     userInput = input("C:\> ")
     if userInput == "dir":
         print("--Directory of C:\--")
@@ -58,6 +508,50 @@ def start():
         print("Users                  [Folder]")
         print("RamenOS                [System Folder]")
         start()
+    elif userInput == "shutdown /s /t 5":
+        print("Leaving in")
+        time.sleep(1)
+        print("5...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("4...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("3...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("2...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("1...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("Goodbye!")
+        playsound("RamenOS Exit5.mp3")
+        time.sleep(5)
+        quit()
+    elif userInput == "shutdown /s /t 5":
+        print("Leaving in")
+        time.sleep(1)
+        print("5...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("4...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("3...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("2...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("1...")
+        playsound("RamenOS Exit1.mp3")
+        time.sleep(1)
+        print("Goodbye!")
+        playsound("RamenOS Exit5.mp3")
+        time.sleep(5)
+        quit()
     elif userInput == "cd Program Files":
         print("Files hidden to protect vital system files!")
         start()
@@ -77,304 +571,4 @@ def start():
     else:
         print("Invalid syntax.")
         start()
-def beta():
-    userInput = input("BETA COMMANDS> ")
-    if userInput == "leave":
-        print("Leaving in")
-        time.sleep(1)
-        print("5...")
-        time.sleep(1)
-        print("4...")
-        time.sleep(1)
-        print("3...")
-        time.sleep(1)
-        print("2...")
-        time.sleep(1)
-        print("1...")
-        time.sleep(1)
-        print("Goodbye!")
-        time.sleep(1)
-        quit()
-    elif userInput == "admin.disableBeta = 'true'":
-        sure = "n"
-        sure = input(r"Are you sure? (Y/N): ")
-        if sure == "n":
-            print("Cancelled.")
-            beta()
-        elif sure == "y":
-            print("Password input hidden.")
-            password = "null"
-            password = getpass.getpass(r"Please input admin passcode: ")
-            if password == "ilikeboobz":
-                print("Starting RamenOS Beta")
-                #Shut up, I know it's sloppy.
-                time.sleep(1)
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print("[O----]")
-                print("Loading...")
-                time.sleep(1)
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print("[OO---]")
-                print("Loading...")
-                time.sleep(1)
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print("[OOO--]")
-                print("Loading...")
-                time.sleep(1)
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print("[OOOO-]")
-                print("Loading...")
-                time.sleep(1)
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print(" ")
-                print("[OOOOO]")
-                print("Loading complete!")
-                time.sleep(1)
-                start()
-                #Yooo, that's dope! it actually works! I don't care if it's sloppy, FU
-            else:
-                print("Invalid password. Quitting...")
-                time.sleep(1)
-                quit()
-        else:
-            print("Invalid Syntax.")
-            beta()
-    else:
-        print("Invalid Syntax.")
-        beta()
-beta()
-#Beta Protocol
+loginUsername()
