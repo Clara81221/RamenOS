@@ -4,9 +4,9 @@ import getpass
 import os
 import sys
 print("Loading...")
-time.sleep(5)
-playsound('sys.mp3')
-words = """
+playsound.playsound('Bleep.mp3')
+time.sleep(1)
+words = ("""
 Startup Process
 ├──System check
    ├──CPU...     OK
@@ -40,7 +40,7 @@ Startup Process
 ├──Beginning AI Server connection "orientalramen408.github.io/BETAAIPROGRAM"
 ├──Startup process success
 └──Login process
-"""
+""")
 for char in words:
     time.sleep(0.05)
     sys.stdout.write(char)
@@ -66,6 +66,7 @@ def loginPassword():
         time.sleep(2)
         start()
     else:
+        playsound.playsound('Denied.mp3')
         words = "Incorrect Password"
         for char in words:
             time.sleep(0.1)
@@ -492,7 +493,7 @@ def start():
     time.sleep(.1)
     print('-----------------------------------------------------------------------------------')                    
     time.sleep(.1) 
-    print('                                   [Version E̸͞͏R̛͘͢R͟Ơ͜͟Ŗ̷̨]                          ')
+    print('                             [Version 0.9.0.10.4.2020]                       ')
     playsound('ERR.mp3')
     time.sleep(.1) 
     print('                     (c) 2020 Takeout Studios. All rights reserved.         ')
